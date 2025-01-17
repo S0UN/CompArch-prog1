@@ -17,7 +17,7 @@ public class LinkedList {
         this.head = null;
     }
 
-    void append(int value) {
+    void add(int value) {
         ListNode newNode = new ListNode(value);
 
         if (this.head == null) {
@@ -39,20 +39,20 @@ public class LinkedList {
             return;
         }
     
-        this.head = new ListNode(0); // First Fibonacci number
-        if (value == 1) return; // If only one term is needed, we're done.
+        this.head = new ListNode(0); 
+        if (value == 1) return; 
     
-        ListNode current = new ListNode(1); // Second Fibonacci number
+        ListNode current = new ListNode(1);
         this.head.next = current;
     
-        int first = 0, second = 1; // First two Fibonacci numbers initialized
+        int first = 0, second = 1; 
     
         for (int i = 2; i < value; i++) {
-            int nextFib = first + second; // Calculate the next Fibonacci number
-            current.next = new ListNode(nextFib); // Create and link the new node
-            current = current.next; // Move to the new node
-            first = second; // Update the value of `first` to the old `second`
-            second = nextFib; // Update the value of `second` to the new Fibonacci number
+            int nextFib = first + second;
+            current.next = new ListNode(nextFib); 
+            current = current.next; 
+            first = second; 
+            second = nextFib; 
         }
     }
     
@@ -150,11 +150,11 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
     
-        // Append Test
-        list.append(10);
-        list.append(20);
-        list.append(30);
-        System.out.print("Append Test: ");
+        // add Test
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        System.out.print("add Test: ");
         list.print();
     
         // Prepend Test

@@ -23,7 +23,7 @@ ListNode *CreateNode(int value)
     return ln;
 }
 
-void append(ListNode **head, int value)
+void add(ListNode **head, int value)
 {
     ListNode *newNode = CreateNode(value);
     if (*head == NULL)
@@ -180,10 +180,10 @@ int main(int argc, const char *argv[]) {
     ListNode *head = NULL;
 
     // Append elements
-    append(&head, 1);
-    append(&head, 2);
-    append(&head, 3);
-    printf("After appending 1, 2, 3: ");
+    add(&head, 1);
+    add(&head, 2);
+    add(&head, 3);
+    printf("After adding 1, 2, 3: ");
     printList(head);
 
     // Test get
