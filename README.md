@@ -27,10 +27,12 @@ Compile and Run Instructions:
 For C:
 
 Compile: gcc -o LinkedList LinkedList.c
+
 Run: ./LinkedList
 
 
 For Java:
 
 Compile: javac LinkedList.java
+
 Run: java LinkedList
