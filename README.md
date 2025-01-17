@@ -5,7 +5,7 @@ LinkedList.c: Implements a linked list with functions for appending, prepending,
 LinkedList.java: Implements a linked list with methods to add, remove, and access elements in Java.
 Functions Implemented in C:
 
-- append
+- add (append)
 - prepend
 - delete
 - get (optional)
@@ -15,7 +15,7 @@ Functions Implemented in C:
 
 Functions Implemented in Java:
 
-- append
+- add (append)
 - prepend
 - delete
 - get
